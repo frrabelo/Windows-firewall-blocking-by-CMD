@@ -1,8 +1,9 @@
 # Windows-firewall-blocking-by-CMD
 Script Blocking a program on the windows firewall by CMD. | Script Bloqueando um programa no firewall do windows pelo CMD.
 
-## Obsevação:
-Antes de começar a usar <a href="#topo">Leia a informação deste link.</a>
+### Obsevação antes de começar a usar: <br>Para cada execução deste script é criado uma nova requisição no firewall, note que a lista de requisições no firewall não será sobrescrita, nem apagada a cada execução do script, muitas execuções irá aumentar o número de requisição no firewall, sobrecarregando visualmente a lista de requisições, mas não atrapalha o funcionamento correto do firewall, apenas visualmente, então apague manualmente ou crie um script para apagar todas as requisição no firewall.<br>
+Caso você crie um script para apagar me avise, ficarei feliz em saber! <br>
+Obrigado!
 
 netsh advfirewall firewall add rule name="Nome_do_programa_sem_apagar_as_aspas" dir=out program="C:\Program Files\Local_do_programa_sem_apagar_as_aspas" description="Descricao_do_programa_sem_apagar_as_aspas" service=any enable=no profile=any localip=any remoteip=any security=notrequired action=block
 
@@ -145,8 +146,5 @@ https://felipegbass.wordpress.com/2012/07/07/gerenciando-o-firewall-do-windows-v
 <br>
 <br>
 <br>
-<a name="topo"> </a>
-## Obsevação:<br>
-Para cada execução deste script é criado uma nova requisição no firewall, note que a lista de requisições no firewall não será sobrescrita nem apagada a cada execução do script, muitas execuções irá aumentar o número de requisição no firewall, sobrecarregando visualmente a lista de requisições, mas não atrapalha o funcionamento correto do firewall, apenas visualmente, então apague manualmente ou crie um script para apagar todas as requisição no firewall.<br>
-Caso você crie um script para apagar me avise, ficarei feliz em saber! <br>
-Obrigado!
+
+
