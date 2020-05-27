@@ -1,7 +1,7 @@
 # Windows-firewall-blocking-by-CMD
 Script Blocking a program on the windows firewall by CMD. | Script Bloqueando um programa no firewall do windows pelo CMD.
 
-# Obsevação:<br>
+## Obsevação:<br>
 Antes de começar a usar <a href="#topo">Leia a informação deste link.</a>
 
 netsh advfirewall firewall add rule name="Nome_do_programa_sem_apagar_as_aspas" dir=out program="C:\Program Files\Local_do_programa_sem_apagar_as_aspas" description="Descricao_do_programa_sem_apagar_as_aspas" service=any enable=no profile=any localip=any remoteip=any security=notrequired action=block
@@ -115,15 +115,15 @@ netsh advfirewall set allprofiles logging allowedconnections enable
 Verificar as configurações gerais da firewall referente a todos os perfis
 
 netsh advfirewall show allprofiles
-
- 
-
- 
-
- 
-
- 
-
+<br>
+ <br>
+<br>
+ <br>
+<br>
+ <br>
+<br>
+ <br>
+<br>
 # Notas:<br>
 Todas estas operações requerem elevação de privilégios<br>
 O parâmetros “advfirewall” só existe no Windows 7 e no Windows 2008 R2. Nas versões anteriores o comando é “firewall”<br>
@@ -133,19 +133,19 @@ O ficheiro de registo da firewall está normalmente localizado em %systemroot%\s
 Fonte: https://ojmoura.wordpress.com/2010/10/19/manipular-a-firewall-do-windows-7-atravs-da-linha-de-comandos/
 
 https://felipegbass.wordpress.com/2012/07/07/gerenciando-o-firewall-do-windows-via-command-prompt/
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <a name="topo"> # Obsevação: </a> <br>
-Para cada execução deste script é criado uma nova requisição no firewall, note que a lista de requisições no firewall não será sobrescrita nem apagada a cada execução do script, muitas execuções irá aumentar o número de requisição no firewall, sobre carregando visualmente a lista de requisições, mas não atrapalha o funcionamento correto do firewall, apenas visualmente, então apague manualmente ou crie um script para apagar todas as requisição no firewall.<br>
-Caso você crie um script para apagar me avise, ficarei feliz! <br>
+Para cada execução deste script é criado uma nova requisição no firewall, note que a lista de requisições no firewall não será sobrescrita nem apagada a cada execução do script, muitas execuções irá aumentar o número de requisição no firewall, sobrecarregando visualmente a lista de requisições, mas não atrapalha o funcionamento correto do firewall, apenas visualmente, então apague manualmente ou crie um script para apagar todas as requisição no firewall.<br>
+Caso você crie um script para apagar me avise, ficarei feliz em saber! <br>
 Obrigado!
