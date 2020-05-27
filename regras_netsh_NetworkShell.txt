@@ -1,0 +1,294 @@
+add rule name=<cadeia de caracteres>
+dir=in|out
+action=allow|block|bypass
+[program=<caminho do programa>]
+[service=<nome abreviado do serviço>|any]
+[description=<cadeia de caracteres>]
+[enable=yes|no (padrão=yes)]
+[profile=public|private|domain|any[,...]]
+[localip=any|<endereço IPv4>|<endereço IPv6>|<sub-rede>|<intervalo>|<lista>]
+[remoteip=any|localsubnet|dns|dhcp|wins|defaultgateway|
+<endereço IPv4>|<endereço IPv6>|<sub-rede>|<intervalo>|<lista>]
+[localport=0-65535|<intervalo de portas>[,...]|RPC|RPC-EPMap|IPHTTPS|any (valor=any)]
+[remoteport=0-65535|<intervalo de portas>[,...]|any (padrão=any)]
+[protocol=0-255|icmpv4|icmpv6|icmpv4:type,code|icmpv6:type,code|
+tcp|udp|any (padrão=any)]
+[interfacetype=wireless|lan|ras|any]
+[rmtcomputergrp=<cadeia de caracteres SDDL>]
+[rmtusrgrp=<cadeia de caracteres SDDL>]
+[edge=yes|deferapp|deferuser|no (padrão=no)]
+[security=authenticate|authenc|authdynenc|authnoencap|notrequired
+(padrão=notrequired)]
+
+=============================================================================
+
+Comandos neste contexto:
+..             - Vai para um nível de contexto acima.
+?              - Exibe uma lista de comandos.
+abort          - Descarta as alterações feitas durante o modo off-line.
+add            - Adiciona uma entrada de configuração a uma lista de entradas.
+advfirewall    - Altera para o contexto `netsh advfirewall'.
+alias          - Adiciona um alias.
+branchcache    - Altera para o contexto `netsh branchcache'.
+bridge         - Altera para o contexto `netsh bridge'.
+bye            - Sai do programa.
+commit         - Confirma as alterações feitas durante o modo off-line.
+delete         - Exclui uma entrada de configuração de uma lista de entradas.
+dhcpclient     - Altera para o contexto `netsh dhcpclient'.
+dnsclient      - Altera para o contexto `netsh dnsclient'.
+dump           - Exibe um script de configuração.
+exec           - Executa um arquivo de script.
+exit           - Sai do programa.
+firewall       - Altera para o contexto `netsh firewall'.
+help           - Exibe uma lista de comandos.
+http           - Altera para o contexto `netsh http'.
+interface      - Altera para o contexto `netsh interface'.
+ipsec          - Altera para o contexto `netsh ipsec'.
+lan            - Altera para o contexto `netsh lan'.
+mbn            - Altera para o contexto `netsh mbn'.
+namespace      - Altera para o contexto `netsh namespace'.
+netio          - Altera para o contexto `netsh netio'.
+offline        - Define o modo atual para off-line.
+online         - Define o modo atual para on-line.
+p2p            - Altera para o contexto `netsh p2p'.
+popd           - Retira um contexto da pilha.
+pushd          - Envia por push o contexto atual na pilha.
+quit           - Sai do programa.
+ras            - Altera para o contexto `netsh ras'.
+rpc            - Altera para o contexto `netsh rpc'.
+set            - Atualiza as configurações das definições.
+show           - Exibe informações.
+trace          - Altera para o contexto `netsh trace'.
+unalias        - Exclui um alias.
+wcn            - Altera para o contexto `netsh wcn'.
+wfp            - Altera para o contexto `netsh wfp'.
+winhttp        - Altera para o contexto `netsh winhttp'.
+winsock        - Altera para o contexto `netsh winsock'.
+wlan           - Altera para o contexto `netsh wlan'.
+
+=============================================================================
+
+Em versões futuras do Windows, a Microsoft poderá remover a funcionalidade Netsh
+para o Windows Firewall with Advanced Security.
+
+A Microsoft recomenda mudar para o Windows PowerShell caso você
+esteja usando netsh para configurar e usar o Windows Firewall with Advanced Security.
+
+Digite Get-Command -Module NetSecurity no prompt do Windows PowerShell para visualizar
+uma lista de comandos para gerenciar o Windows Firewall with Advanced Security.
+
+Visite http://go.microsoft.com/fwlink/?LinkId=217627 para obter informações adicionais
+sobre comandos PowerShell para o Windows Firewall with Advanced Security.
+
+===============================================================================
+Copy-NetFirewallRule
+Copy-NetIPsecMainModeCryptoSet
+Copy-NetIPsecMainModeRule
+Copy-NetIPsecPhase1AuthSet
+Copy-NetIPsecPhase2AuthSet
+Copy-NetIPsecQuickModeCryptoSet
+Copy-NetIPsecRule
+Disable-NetFirewallRule
+Disable-NetIPsecMainModeRule
+Disable-NetIPsecRule
+Enable-NetFirewallRule
+Enable-NetIPsecMainModeRule
+Enable-NetIPsecRule
+Find-NetIPsecRule
+Get-NetFirewallAddressFilter
+Get-NetFirewallApplicationFilter
+Get-NetFirewallInterfaceFilter
+Get-NetFirewallInterfaceTypeFilter
+Get-NetFirewallPortFilter
+Get-NetFirewallProfile
+Get-NetFirewallRule
+Get-NetFirewallSecurityFilter
+Get-NetFirewallServiceFilter
+Get-NetFirewallSetting
+Get-NetIPsecDospSetting
+Get-NetIPsecMainModeCryptoSet
+Get-NetIPsecMainModeRule
+Get-NetIPsecMainModeSA
+Get-NetIPsecPhase1AuthSet
+Get-NetIPsecPhase2AuthSet
+Get-NetIPsecQuickModeCryptoSet
+Get-NetIPsecQuickModeSA
+Get-NetIPsecRule
+New-NetFirewallRule
+New-NetIPsecDospSetting
+New-NetIPsecMainModeCryptoSet
+New-NetIPsecMainModeRule
+New-NetIPsecPhase1AuthSet
+New-NetIPsecPhase2AuthSet
+New-NetIPsecQuickModeCryptoSet
+New-NetIPsecRule
+Open-NetGPO
+Remove-NetFirewallRule
+Remove-NetIPsecDospSetting
+Remove-NetIPsecMainModeCryptoSet
+Remove-NetIPsecMainModeRule
+Remove-NetIPsecMainModeSA
+Remove-NetIPsecPhase1AuthSet
+Remove-NetIPsecPhase2AuthSet
+Remove-NetIPsecQuickModeCryptoSet
+Remove-NetIPsecQuickModeSA
+Remove-NetIPsecRule
+Rename-NetFirewallRule
+Rename-NetIPsecMainModeCryptoSet
+Rename-NetIPsecMainModeRule
+Rename-NetIPsecPhase1AuthSet
+Rename-NetIPsecPhase2AuthSet
+Rename-NetIPsecQuickModeCryptoSet
+Rename-NetIPsecRule
+Save-NetGPO
+Set-NetFirewallAddressFilter
+Set-NetFirewallApplicationFilter
+Set-NetFirewallInterfaceFilter
+Set-NetFirewallInterfaceTypeFilter
+Set-NetFirewallPortFilter
+Set-NetFirewallProfile
+Set-NetFirewallRule
+Set-NetFirewallSecurityFilter
+Set-NetFirewallServiceFilter
+Set-NetFirewallSetting
+Set-NetIPsecDospSetting
+Set-NetIPsecMainModeCryptoSet
+Set-NetIPsecMainModeRule
+Set-NetIPsecPhase1AuthSet
+Set-NetIPsecPhase2AuthSet
+Set-NetIPsecQuickModeCryptoSet
+Set-NetIPsecRule
+Show-NetFirewallRule
+Show-NetIPsecRule
+Sync-NetIPsecRule
+Update-NetIPsecRule
+Get-DAPolicyChange
+New-NetIPsecAuthProposal
+New-NetIPsecMainModeCryptoProposal
+New-NetIPsecQuickModeCryptoProposal
+===========================================================================
+===========================================================================
+Manipular a firewall do Windows 7 através da linha de comandos
+
+
+O utilitário netsh (Network Shell) encontra-se presente em todas as edições do Windows 7 e permite mostrar ou alterar a configuração de rede de um determinado computador (local ou remoto).
+
+Existem duas formas de se utilizar este comando: através da shell ou passando os directamente os parâmetros. Nesta publicação vou falar apenas na passagem directa de parâmetros. Para explorar a shell e obterem a lista completa de operações possíveis de se efectuar basta na linha de comandos executar “netsh”.
+
+netsh
+
+ 
+
+Desactivar a firewall no perfil Domínio
+
+netsh advfirewall set domainprofile state off
+
+ 
+
+Desactivar a firewall no perfil Privado
+
+netsh advfirewall set privateprofile state off
+
+ 
+
+Desactivar a firewall no perfil Público
+
+netsh advfirewall set publicprofile state off
+
+ 
+
+Desactivar a firewall para todos os perfis
+
+netsh advfirewall set all state off
+
+ 
+
+Activar a firewall no perfil Domínio
+
+netsh advfirewall set domainprofile state on
+
+ 
+
+Activar a firewall no perfil Privado
+
+netsh advfirewall set privateprofile state on
+
+ 
+
+Activar a firewall no perfil Público
+
+netsh advfirewall set publicprofile state on
+
+ 
+
+Activar a firewall para todos os perfis
+
+netsh advfirewall set all state on
+
+ 
+
+Exportar todas as configurações da firewall
+
+netsh advfirewall export c:\advfirewall.wfw
+
+ 
+
+Importar ficheiro com as configurações da firewall
+
+netsh advfirewall import c:\advfirewall.wfw
+
+ 
+
+Adicionar uma excepção para uma aplicação em específico
+
+netsh advfirewall firewall add rule name=regra_para_permitir_acesso_inbound_do_notepad dir=in program=c:\Windows\System32\notepad.exe  action=allow
+
+ 
+
+Criar uma excepção para o porto 80 do protocolo TCP
+
+netsh advfirewall firewall add rule name= permitir_trafego_porto_80 dir=in action=allow protocol=TCP localport=80
+
+ 
+
+Repor as configurações originais da firewall
+
+netsh advfirewall reset
+
+ 
+
+Registar todas as ligações ignoradas pela firewal referente a todos os perfis
+
+netsh advfirewall set allprofiles logging droppedconnections enable
+
+ 
+
+Registar todas as ligações efectuadas com sucesso referente a todos os perfis
+
+netsh advfirewall set allprofiles logging allowedconnections enable
+
+ 
+
+Verificar as configurações gerais da firewall referente a todos os perfis
+
+netsh advfirewall show allprofiles
+
+ 
+
+ 
+
+ 
+
+ 
+
+Notas:
+
+Todas estas operações requerem elevação de privilégios
+O parâmetros “advfirewall” só existe no Windows 7 e no Windows 2008 R2. Nas versões anteriores o comando é “firewall”
+O utilitário Netsh está presente desde o Windows XP SP2
+O ficheiro de registo da firewall está normalmente localizado em %systemroot%\system32\LogFiles\Firewall\
+
+Fonte: https://ojmoura.wordpress.com/2010/10/19/manipular-a-firewall-do-windows-7-atravs-da-linha-de-comandos/
+
+https://felipegbass.wordpress.com/2012/07/07/gerenciando-o-firewall-do-windows-via-command-prompt/
+
