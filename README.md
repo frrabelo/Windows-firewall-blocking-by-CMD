@@ -16,6 +16,7 @@ Copie a linha acima para cada programa que deseja bloquear no firewall.<br>
 Todas estas operações requerem elevação de privilégios<br>
 Execute o arquivo "*.bat" como adminstrador.<br>
 
+# <br>
 
 O utilitário netsh (Network Shell) encontra-se presente em todas as edições do Windows 7 e permite mostrar ou alterar a configuração de rede de um determinado computador (local ou remoto).
 
