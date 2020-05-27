@@ -3,7 +3,7 @@ Script Blocking a program on the windows firewall by CMD. | Script Bloqueando um
 
 netsh advfirewall firewall add rule name="Nome_do_programa_sem_apagar_as_aspas" dir=out program="C:\Program Files\Local_do_programa_sem_apagar_as_aspas" description="Descricao_do_programa_sem_apagar_as_aspas" service=any enable=no profile=any localip=any remoteip=any security=notrequired action=block
 
-Modo de usar:
+Modo de usar:<br>
 Crie um arquivo "*.bat"
 Copie a linha acima para cada programa que deseja bloquear no firewall.
 Execute o arquivo "*.bat" como adminstrador.
