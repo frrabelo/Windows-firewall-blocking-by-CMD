@@ -10,7 +10,7 @@ netsh advfirewall firewall add rule name="Nome_do_programa_sem_apagar_as_aspas" 
 
 ### Modo de usar:<br>
 Crie um arquivo "*.bat"<br>
-Copie a linha acima para cada programa que deseja bloquear no firewall.<br>
+Copie a linha de comando acima para cada programa que deseja bloquear no firewall.<br>
 
 ## Notas:<br>
 Todas estas operações requerem elevação de privilégios<br>
