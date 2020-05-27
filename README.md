@@ -1,6 +1,5 @@
 # Windows-firewall-blocking-by-CMD
-Manipulação do firewall do Windows através da linha de comandos.
-Script Blocking a program on the windows firewall by CMD. | Script Bloqueando um programa no firewall do windows pelo CMD.
+Manipulação do firewall no Windows através da linha de comandos.<br> Script de bloqueio um programa no firewall do windows pelo CMD.
 
 ### Obsevação antes de começar a usar: <br>Para cada execução deste script é criado uma nova requisição no firewall, note que a lista de requisições no firewall não será sobrescrita, nem apagada a cada execução do script, muitas execuções irá aumentar o número de requisição no firewall, sobrecarregando visualmente a lista de requisições, mas não atrapalha o funcionamento correto do firewall, apenas visualmente, então apague manualmente ou crie um script para apagar todas as requisição no firewall.<br>
 Caso você crie um script para apagar me avise, ficarei feliz em saber! <br>
